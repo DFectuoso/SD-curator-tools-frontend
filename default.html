@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11"> 
+<meta NAME="description" CONTENT="StartupDigest Events">
+<meta NAME="keywords" CONTENT="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<LINK REL="stylesheet" TYPE="text/css" HREF="sd.css" TITLE="formal">
+<script type="text/javascript" src="sd.js"></script>
+<script type="text/javascript" language="javascript" src="images/prototype-1.js"></script>
+<script type="text/javascript" language="javascript" src="images/prototype-base-extensions.js"></script>
+<script type="text/javascript" language="javascript" src="images/prototype-date-extensions.js"></script>
+<script type="text/javascript" language="javascript" src="images/behaviour.js"></script>
+<script type="text/javascript" language="javascript" src="images/datepicker.js"></script>
+<script type="text/javascript" language="javascript" src="images/behaviors.js"></script>
+<link rel="stylesheet" href="images/datepicker.css">
+<title>[StartupDigest] Events</title>
+</head>
+<body topmargin="20" leftmargin="0" bgcolor="#CCCCCC" style="font:Arial, Helvetica, sans-serif;">
+<div align="center">
+	<div align="left" style="width:80%;">
+        <div class="welcome">Welcome back, Chris!</div>
+        <div style="clear:both;">
+            <div class="eventbox" style="width:50%; margin-right:30px;"> <!-- LEFT COL -->
+                <div class="eventboxtitle">List of events for Week 5 (Feb 1 - Feb 8)</div>
+                <div class="eventlist">
+                    <Table cellspacing="0" cellpadding="5" border="0" style="width:100%;">
+                        <tr>
+                            <td class="eventlisttitlerow"></td>
+                            <td class="eventlisttitlerow">Event Title</td>
+                            <td class="eventlisttitlerow">Date</td>
+                            <td class="eventlisttitlerow">Time</td>
+                            <td class="eventlisttitlerow">Place</td>
+                        </tr>
+                        <tr>
+                            <td class="eventlistrow"><input type="checkbox" name="event1" /></td>
+                            <td class="eventlistrow">Test event title 1</td>
+                            <td class="eventlistrow">January 12</td>
+                            <td class="eventlistrow">1-4pm</td>
+                            <td class="eventlistrow">Conference hall</td>
+                        </tr>
+                        <tr>
+                            <td class="eventlistrow"><input type="checkbox" name="event2" /></td>
+                            <td class="eventlistrow">Test event title 2</td>
+                            <td class="eventlistrow">January 12</td>
+                            <td class="eventlistrow">1-4pm</td>
+                            <td class="eventlistrow">Conference hall</td>
+                        </tr>
+                        <tr>
+                            <td class="eventlistrow"><input type="checkbox" name="event3" /></td>
+                            <td class="eventlistrow">Test event title 3</td>
+                            <td class="eventlistrow">January 12</td>
+                            <td class="eventlistrow">1-4pm</td>
+                            <td class="eventlistrow">Conference hall</td>
+                        </tr>
+                        <tr>
+                            <td class="eventlistrow"><input type="checkbox" name="event4" /></td>
+                            <td class="eventlistrow">Test event title 4</td>
+                            <td class="eventlistrow">January 12</td>
+                            <td class="eventlistrow">1-4pm</td>
+                            <td class="eventlistrow">Conference hall</td>
+                        </tr>
+                        <tr>
+                            <td class="eventlistrow"><input type="checkbox" name="event5" /></td>
+                            <td class="eventlistrow">Test event title 5</td>
+                            <td class="eventlistrow">January 12</td>
+                            <td class="eventlistrow">1-4pm</td>
+                            <td class="eventlistrow">Conference hall</td>
+                        </tr>
+                    </Table>                
+                </div>
+            </div>	
+            <form name="addevent" method="post">
+            <input type="hidden" name="EventID" value="" />
+            <div class="eventbox" style="width:40%"> <!-- RIGHT COL -->
+                <div class="eventboxtitle" style="margin-bottom:10px;">Event: Cool title name</div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">Title:</div>
+                    <div class="addeventformrowrightcol"><input class="loginInputs" name="Title" maxlength="100" value="Title" onFocus="if(this.value=='Title'){this.value='';}" onBlur="if(this.value==''){this.value='Title';}" style="color:#666666;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">Date:</div>
+                    <div class="addeventformrowrightcol"><input class="datepicker" name="Date" maxlength="100" style="padding: 9px; border: solid 1px #E5E5E5; outline: 0; font: normal 13px/100% Arial, Verdana, Tahoma, sans-serif; width: 200px; background: #FFFFFF; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">Start Time:</div>
+                    <div class="addeventformrowrightcol"><input class="timepicker" name="StartTime" maxlength="100" style="padding: 9px; border: solid 1px #E5E5E5; outline: 0; font: normal 13px/100% Arial, Verdana, Tahoma, sans-serif; width: 200px; background: #FFFFFF; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">End Time:</div>
+                    <div class="addeventformrowrightcol"><input class="timepicker" name="EndTime" maxlength="100" style="padding: 9px; border: solid 1px #E5E5E5; outline: 0; font: normal 13px/100% Arial, Verdana, Tahoma, sans-serif; width: 200px; background: #FFFFFF; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">&nbsp;</div>
+                    <div class="addeventformrowrightcol"><input type="checkbox" name="recurring" /> Recurring Event</div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">Location:</div>
+                    <div class="addeventformrowrightcol"><input class="loginInputs" name="Location" maxlength="100" value="Location" onFocus="if(this.value=='Location'){this.value='';}" onBlur="if(this.value==''){this.value='Location';}" style="color:#666666;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">More Info:</div>
+                    <div class="addeventformrowrightcol"><input class="loginInputs" name="MoreInfo" maxlength="100" value="More Info" onFocus="if(this.value=='More Info'){this.value='';}" onBlur="if(this.value==''){this.value='More Info';}" style="color:#666666;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">Twitter:</div>
+                    <div class="addeventformrowrightcol"><input class="loginInputs" name="Twitter" maxlength="100" value="Twitter" onFocus="if(this.value=='Twitter'){this.value='';}" onBlur="if(this.value==''){this.value='Twitter';}" style="color:#666666;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right">Optional Link:</div>
+                    <div class="addeventformrowrightcol"><input class="loginInputs" name="OptionalLink" maxlength="100" value="OptionalLink" onFocus="if(this.value=='OptionalLink'){this.value='';}" onBlur="if(this.value==''){this.value='OptionalLink';}" style="color:#666666;" /></div>
+                </div>
+                <div class="addeventformrow">
+                    <div class="addeventformrowleftcol" align="right" style="top:0px;">Description:</div>
+                    <div class="addeventformrowrightcol"><textarea class="loginInputs" name="DescLong" style="height:100px; width:260px;"></textarea></div>
+                </div>
+                <div class="addeventformrow" style="padding-right:50px; padding-bottom:20px;">
+				    <div class="fancybuttons" onClick="">Copy</div>
+				    <div class="fancybuttons" onClick="">Save</div>
+                </div>
+            </div>	
+            </form>
+        </div>
+	</div>
+</div>
+</body>
+</html>
